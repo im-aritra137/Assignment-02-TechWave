@@ -1,0 +1,97 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
+
+header {
+    background-color: #1A0B2E;
+    width: 100%;
+}
+
+.navbar{
+    max-width: 1600px;
+    height: 92px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 30px 200px 30px 200px; */
+    
+}
+
+.inter {
+    color: aliceblue;
+    padding: 30px 200px 30px 200px;
+}
+
+.inter h1 {
+    font-weight: 800;
+    color: #ffffff;
+    
+    white-space: nowrap;
+    -webkit-text-stroke: 100% #000000;
+    color: white;
+}
+
+.inter h1 span {
+    background: linear-gradient(0deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 100% #000000;
+    display: inline-block;
+    text-wrap: nowrap;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-self: center;
+    gap: 32px;
+   
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+   
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 200px 24px 200px;
+}
+
+.button button {
+    background: linear-gradient(88deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    /* padding: 12.5px 40px 12.5px 40px; */
+    padding: 16px 12px 16px 12px; 
+    gap: 4px;
+    border-radius: 35px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.button button img {
+    width: 16px;
+    height: 12px;
+}
+
