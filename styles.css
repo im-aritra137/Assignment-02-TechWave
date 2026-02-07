@@ -21,17 +21,18 @@ hr{
 header {
     background-color: #1A0B2E;
     width: 100%;
-    position: static;  
+    /* /* position: fixed;  
     top: 0;
     left: 0;
-    z-index: 1000;
-}
+    z-index: 1000; */
+} 
 
 .navbar{
     max-width: 1600px;
     height: 92px;
     margin: 0px auto;
     display: flex;
+    /* position: relative; */
     justify-content: space-between;
     align-items: center;
     padding: 30px 80px;
@@ -127,7 +128,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100vh; 
 
     padding-top: 10vh;  /* Adjust padding to scale with viewport height */
     padding-bottom: 15vh;
@@ -140,13 +141,6 @@ header {
     /* justify-content: center;  */
     align-items: center;
     position: relative;
-}
-.hero-banner {
-    /* display: flex;
-    flex-direction: column;
-    gap: 24px; 
-    padding: 70px 120px 134px 120px;
-    box-sizing: border-box; */
 }
 
 .hero-circle {
@@ -180,4 +174,100 @@ header {
     z-index: 10; /* Ensure the microphone is above the circle */
     
 }
+.new-icon {
+    position: absolute;
+    color: #1A0B2E;
+    background-color: #00FF88;
+    width: 60px; 
+    height: 30px; 
+    border-radius: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 23%;
+    left: 60%;
+    margin-left: -31px;  /* Adjust this to position right of mic */
+    margin-top: -20px;  /* Adjust this to position above mic */
+    transform: none; 
+    z-index: 10;
+    box-shadow: 0px 3px 27px rgba(0, 255, 136, 0.5); /* Optional: Add a subtle shadow for better visibility */
+    
+    display: flex;                  /* Enable flexbox */
+    justify-content: center;        /* Center content horizontally */
+    align-items: center;            /* Center content vertically */
+    text-align: center; 
+    font-size: 15px; 
+    font-weight: 600;   
+    padding: 8px 16px; 
+           /* Ensure the text is centered */
+}
 
+.heading {
+    /* position: absolute; */
+    /* display: block;
+    color: #ffffff;
+    padding: 430px 432px 92px 618px; */
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 10%; /* Position from bottom */
+    left: 54.5%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 0 20px;
+
+}
+.head1 {
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 40px;
+
+}
+.para {
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.8;
+    text-align: center;
+    white-space: nowrap;
+
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 22px;  
+}
+
+.spotify{
+    width: 201px;
+    height: 44px;
+    margin-right: 8px;
+    padding: 12px 20px 12px 20px;
+    background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 35px;
+    gap: 4px;
+    display: flex;
+
+}
+
+.subscribe {
+    width: 147px;
+    height: 44px;
+    padding: 12px 20px 12px 20px;
+    background: transparent;
+    border: 1px solid #00FF88;
+    border-radius: 35px;
+    font-size: 16px;
+    color: #00FF88;
+    font-weight: 600;
+    text-align: center;
+    gap: 4px;
+    display: flex;
+}
