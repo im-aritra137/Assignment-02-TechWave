@@ -28,14 +28,14 @@ header {
 } 
 
 .navbar{
-    max-width: 1600px;
+    max-width: 1200px;
     height: 92px;
     margin: 0px auto;
     display: flex;
     /* position: relative; */
     justify-content: space-between;
     align-items: center;
-    padding: 30px 80px;
+    padding: 30px 20px;
     /* padding: 3vw 5vw; */
     /* padding: 30px 200px 30px 200px; */
     
@@ -51,7 +51,7 @@ header {
     color: #ffffff;
     
     white-space: nowrap;
-    -webkit-text-stroke: 100% #000000;
+    -webkit-text-stroke: 0;
     color: white;
 }
 
@@ -60,7 +60,6 @@ header {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 100% #000000;
     display: inline-block;
     text-wrap: nowrap;
 }
@@ -119,6 +118,7 @@ header {
     /* height: auto; */
     object-fit: contain;
     flex-shrink: 0;
+
 }
 
 
@@ -348,11 +348,12 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(150px, auto);
-    width: 100%;
-    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    gap: 24px;
     margin: 0 auto;
     /* padding: 218px 200px 120px 200px; */
-    padding: 40px 200px 0 200px;
+    padding: 40px 0;
 }
 
 .tall {
@@ -375,7 +376,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    gap: 16px;
+    gap: 18px;
 }
 
 .card h3 {
@@ -494,7 +495,7 @@ header {
 
 .hostbox {
     background-color: rgba(53, 17, 101, 0.4);
-    border-radius: 20px;
+    border-radius: 50px;
     padding: 60px;
     width: 100%;
     max-width: 1200px;
@@ -515,6 +516,7 @@ header {
 .hostcontent {
     display: flex;
     flex-direction: column;
+    width: fit-content;
     
 } 
 
@@ -563,4 +565,84 @@ header {
     height: 26px;
     opacity: 0.8;  
     transition: opacity 0.3s ease;
+}
+
+footer {
+    background-image: url('./assets/footer-bg.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 412px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-content {
+    position: relative; 
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+}
+
+/* --- Logo Styling --- */
+.footer-logo {
+    color: #ffffff;
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.logo-accent {
+    /* Fixed the stroke issue and improved the gradient */
+    background: linear-gradient(to bottom, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+/* --- Social Links Container --- */
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Wraps icons on mobile screens */
+    gap: 32px;      /* Matches the spacing in your image */
+    margin-bottom: 40px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.social-item span{
+    opacity: 0.6;
+}
+
+.social-item img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.social-item:hover {
+    opacity: 0.8;
+    transform: translateY(-3px);
+}
+
+/* --- Copyright --- */
+.copyright {
+    font-size: 14px;
+    color: #a094b1;
+    opacity: 0.7;
+    margin: 0;
 }
