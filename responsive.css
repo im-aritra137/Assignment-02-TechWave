@@ -1,0 +1,284 @@
+
+
+/* ========================
+   SMALL DEVICES (Up to 576px)
+   ======================== */
+
+@media (max-width: 576px) {
+    /* Navigation */
+    .navbar {
+        padding: 15px 20px;
+        height: auto;
+    }
+
+    .inter h1 {
+        font-size: 30px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    .button {
+        display: none;
+       
+    }
+
+
+    /* Hero Section */
+    #hero {
+        padding-top: 60px;
+        padding-bottom: 80px;
+        min-height: 70vh;
+    }
+
+    .hero-circle {
+        width: 180px;
+        height: 180px;
+        top: 35%;
+        left: 50%;
+    }
+
+    .hero-mic {
+        width: 90px;
+        height: 100px;
+        top: 34%;
+        left: 52%;
+    }
+
+    .new-icon {
+        width: 45px;
+        height: 24px;
+        font-size: 11px;
+        padding: 6px 12px;
+        top: 19%;
+        left: 58%;
+    }
+
+    .heading {
+        bottom: 5%;
+        left: 50%;
+        padding: 0 15px;
+    }
+
+    .head1 {
+        font-size: 50px;
+        margin-top: 20px;
+    }
+
+    .para {
+        font-size: 14px;
+        white-space: normal;
+    }
+
+    .buttons {
+        flex-direction: row;
+        width: 100%;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .spotify {
+        width: 100%;
+        max-width: 250px;
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .subscribe {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+
+    /* About Section */
+    #about {
+        padding: 40px 20px 60px 20px;
+    }
+
+    .about-content {
+        font-size: 40px;
+        gap: 20px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .about-content1 {
+        display: block;
+        font-size: 14px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .about-hr {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .product {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 110px;
+        margin-top: 20px;
+    }
+
+    .product1, .product2, .product3, .product4 {
+        font-size: 70px;
+    }
+
+    .product1 p, .product2 p, .product3 p, .product4 p {
+        font-size: 16px;
+    }
+
+    /* Reasons Section */
+    #reasons {
+        padding: 60px 20px;
+    }
+
+    .reason-why {
+        font-size: 40px;
+       
+    }
+
+    .grid-wrapper {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 16px;
+        padding: 30px 0;
+    }
+
+    .tall, .wide, .bottom-wide {
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+    .card {
+        padding: 30px 24px;
+        gap: 12px;
+    }
+
+    .card h3 {
+        font-size: 30px;
+    }
+
+    .card p {
+        font-size: 15px;
+    }
+
+    /* Featured Section */
+    #featured {
+        padding: 60px 20px;
+    }
+
+    #featured h3 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .featuredcard {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .card1, .card2, .card3 {
+        padding: 30px 20px;
+        grid-column: auto;
+    }
+
+    .card1 iframe, .card2 iframe, .card3 iframe {
+        height: 200px;
+    }
+
+    .card1 h4, .card2 h4, .card3 h4 {
+        font-size: 25px;
+    }
+
+    .card1 p, .card2 p, .card3 p {
+        font-size: 16px;
+        min-height: auto;
+    }
+
+    /* Host Section */
+    #host {
+        padding: 60px 20px;
+    }
+
+    #host h3 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .hostbox {
+        flex-direction: column;
+        padding: 30px 24px;
+        gap: 24px;
+        border-radius: 30px;
+        text-align: center;
+    }
+
+    .hostbox img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hostcontent {
+        align-items: center;
+    }
+
+    .hostcontent h4 {
+        font-size: 30px;
+    }
+
+    .hostcontent p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .hostsocial {
+        justify-content: center;
+        margin-top: 16px;
+    }
+
+    .hostsocial img {
+        width: 27px;
+        height: 27px;
+
+    }
+
+    /* Footer */
+    footer {
+        min-height: 270px;
+    }
+
+    .footer-content {
+        padding: 30px 20px;
+    }
+
+    .footer-logo {
+        font-size: 50px;
+        margin-bottom: 24px;
+    }
+
+    .social-links {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-bottom: 30px;
+    }
+
+    .social-item {
+        font-size: 20px;
+    }
+
+    .copyright {
+        font-size: 16px;
+    }
+}
