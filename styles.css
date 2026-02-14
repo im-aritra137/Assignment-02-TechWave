@@ -359,6 +359,21 @@ header {
 
 }
 
+.product3 .rating-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.product3 span{
+    display: flex;
+    align-items: center; 
+}
+.product3 img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
 #reasons {
     background-color: #230E3D;
     width: 100%;
